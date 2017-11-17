@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.dmb.actividad6di.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:background="#2145b4"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu nombre"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localización:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu localización"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Insertar"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hombre"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mujer"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars = "vertical"
+            android:padding="5dp"
+            android:scrollbarStyle="insideInset"
+            android:layout_weight=".5"
+            android:background="#01e2f7">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TextView
+                    android:id="@+id/changeColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:height="50dp"
+                    android:gravity="center"
+                    android:background="#ffffff"
+                    android:layout_marginTop="30dp"
+                    android:text="Púlsame"
+                    android:textColor="#000000"
+                    android:onClick="changeColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#ffffff"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:height="50dp"
+                    android:gravity="center"
+                    android:background="#ffffff"
+                    android:layout_marginTop="30dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#ffffff"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:gravity="center"
+                    android:height="50dp"
+                    android:background="#ffffff"
+                    android:layout_marginTop="30dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#ffffff"
+                    android:text="TextView" />
+
+            </TableLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/openFloridaOberta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abrir"
+                android:onClick="openFloridaOberta"/>
+
+            <Button
+                android:id="@+id/openListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar"
+                android:layout_marginTop="10dp"
+                android:onClick="openListView"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

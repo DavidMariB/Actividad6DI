@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dmb.actividad6di.Main3Activity">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WI-FI"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        android:layout_alignLeft="@id/tv2"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/switch1"
+        android:paddingTop="50dp"
+        android:layout_alignLeft="@id/tv2"/>
+
+    <CheckBox
+        android:id="@+id/silenceMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch2"
+        android:layout_marginTop="50dp"
+        android:text="Modo Silencioso"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:onClick="silenceModeChecker"
+        android:layout_alignLeft="@id/tv2"/>
+
+    <TextView
+        android:id="@+id/silenceModeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/silenceMode"
+        android:text="Modo Silencioso Desactivado"/>
+
+    <TextView
+        android:id="@+id/ringTone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/silenceMode"
+        android:paddingTop="50dp"
+        android:text="Tono"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_alignLeft="@id/tv2"/>
+
+    <TextView
+        android:id="@+id/ringToneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ringTone"
+        android:text="Tono no seleccionado"
+        android:layout_alignLeft="@id/ringTone"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ringTone"
+        android:paddingTop="50dp"
+        android:text="Opciones Avanzadas"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:onClick="advancedOptions"/>
+
+</android.widget.RelativeLayout>

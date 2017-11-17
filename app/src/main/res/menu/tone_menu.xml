@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/classic"
+        android:title="Clasico"/>
+
+    <item
+        android:id="@+id/mambo"
+        android:title="Mambo"/>
+
+    <item
+        android:id="@+id/piano"
+        android:title="Piano"/>
+
+    <item
+        android:id="@+id/pitbull"
+        android:title="Pitbull"/>
+
+</menu>
