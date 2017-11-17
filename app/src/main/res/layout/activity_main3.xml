@@ -9,24 +9,26 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="WI-FI"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
         android:paddingTop="50dp"
-        android:layout_alignLeft="@id/tv2"/>
+        android:layout_alignLeft="@id/tv2"
+        android:paddingRight="50dp"/>
 
     <Switch
         android:id="@+id/switch2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bluetooth"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/switch1"
         android:paddingTop="50dp"
-        android:layout_alignLeft="@id/tv2"/>
+        android:layout_alignLeft="@id/tv2"
+        android:paddingRight="50dp"/>
 
     <CheckBox
         android:id="@+id/silenceMode"
@@ -38,7 +40,8 @@
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
         android:onClick="silenceModeChecker"
-        android:layout_alignLeft="@id/tv2"/>
+        android:layout_alignLeft="@id/tv2"
+        android:layoutDirection="rtl"/>
 
     <TextView
         android:id="@+id/silenceModeText"
@@ -46,7 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/silenceMode"
-        android:text="Modo Silencioso Desactivado"/>
+        android:text="Modo Silencioso Desactivado"
+        android:layout_alignLeft="@id/silenceMode"/>
 
     <TextView
         android:id="@+id/ringTone"
